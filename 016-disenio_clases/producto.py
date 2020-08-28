@@ -9,6 +9,9 @@ class Producto:
         self.__nombre = nombre
         self.__precio = precio
         
+    def getPrecio(self):
+        return self.__precio
+        
     def __str__(self):
         return "id producto: "+str(self.__idProducto) + ", nombre: "+self.__nombre+", precio: " + str(self.__precio)
         
