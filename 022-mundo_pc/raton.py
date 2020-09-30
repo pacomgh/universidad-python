@@ -9,7 +9,7 @@ class Raton(DispositivoEntrada):
         #self.__idRaton = idRaton
         self.__idRaton = Raton.contadorRatones
         ##accedemos a los atributos protegidos, podemos acceder directamente a ellos
-        #con el parametro de self
+        #con el parametro de self._atributoProtegido
         self._marca = marca
         self._tipoEntrada = tipoEntrada
         
@@ -22,5 +22,5 @@ class Raton(DispositivoEntrada):
                 f"tipoEntrada: {self._tipoEntrada}"                
             )
         
-raton = Raton("hp", "usb")
-print(raton)
+#raton = Raton("hp", "usb")
+#print(raton)

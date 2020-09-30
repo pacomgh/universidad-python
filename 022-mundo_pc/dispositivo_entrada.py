@@ -5,18 +5,18 @@ class DispositivoEntrada:
         #atributos protegidos
         self._tipoEntrada = tipoEntrada
         self._marca = marca
-    
-    """ def setTipoEntrada(self, tipoEntrada):
-        self.__tipoEntrada = tipoEntrada
-    
+        
     def getTipoEntrada(self):
-        return self.__tipoEntrada
-    
+        return self._tipoEntrada
+
+    def setTipoEntrada(self, tipoEntrada):
+        self._tipoEntrada = tipoEntrada
+
     def setMarca(self, marca):
-        self.__marca
-    
+        self._marca
+
     def getMarca(self):
-        return self.__marca
+        return self._marca
     
-    def __str__(self):
-         """
+    
+
