@@ -23,8 +23,8 @@ class Monitor:
             f"Tamanio: {self._tamanio}"
         )
         
-monitor = Monitor("Lenovo", "13inch")
-monitor2 = Monitor("HP", "15inch")
-print(monitor)
-print(monitor2)
+#monitor = Monitor("Lenovo", "13inch")
+#monitor2 = Monitor("HP", "15inch")
+#print(monitor)
+#print(monitor2)
     

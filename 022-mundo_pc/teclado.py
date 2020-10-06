@@ -16,5 +16,5 @@ class Teclado(DispositivoEntrada):
             f"tipoEntrada: {self._tipoEntrada}"
         )
         
-teclado = Teclado("hp", "cable")
-print(teclado)
+#teclado = Teclado("hp", "cable")
+#print(teclado)
