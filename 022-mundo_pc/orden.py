@@ -4,7 +4,8 @@ class Orden:
     #falta agregar setters y getters
     contadorOrdenes = 0
     def __init__(self, computadoras):#computadoras es una lista de computadoras
-        self.__idOrden += 1
+        Orden.contadorOrdenes += 1
+        self.__idOrden = Orden.contadorOrdenes
         self.__computadoras = computadoras
         
     def agregarComputadora(self, computadora):
@@ -13,10 +14,10 @@ class Orden:
         
     def __str__(self):
         computadoraStr = ""
-        for computadora in computadoras:
+        for computadora in self.__computadoras:
             computadoraStr += computadora.__str__()
         
         return(
-            f"Orden: {idOrden}, "
+            f"Orden: {self.__idOrden}, "
             f"Computadoras: {computadoraStr}"
         )
