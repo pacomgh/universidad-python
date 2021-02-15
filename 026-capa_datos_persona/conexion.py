@@ -2,6 +2,7 @@ from logger_base import logger
 import psycopg2 as db
 import sys
 
+#clase que crea solamente la conexion a la bd
 #definimos la clase conexion con sus atributos
 class Conexion:
     #se ponen en mayusculas porque son constantes
