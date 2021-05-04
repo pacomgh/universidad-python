@@ -37,12 +37,12 @@ class PersonaDao:
             conexion = Conexion.obtenerConexion()
             cursor = Conexion.obtenerCursor()
             logger.debug(cursor.mogrify(cls.__INSERTAR))       
-            logger.debug(f'Persona a insrtar: {persona}')       
+            logger.debug(f'Persona a insertar: {persona}')       
             #creamos tupla de valores
             valores = (persona.getNombre(), persona.getApellido(), persona.getEmail())
             cursor.execute(cls.__INSERTAR, valores)
             conexion.commit()#mandamos a base de datos            
-            return cursor.rowcount()#indica cuantos registros se insertaron
+            return cursor.rowcount#indica cuantos registros se insertaron
         except Exception as e:
             conexion.rollback()#si algo sale mal damos marcha atras
             logger.error(f'Excepcion, error al insertar persona: {e}')   
